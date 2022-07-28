@@ -1,3 +1,49 @@
+:root {
+    /* Color Primary */
+    --dark-blue: hsl(233, 26%, 24%);
+    /* --lime-green: hsl(136, 65%, 51%); */
+    --lime-green: #30D35C;
+    /* --bright-cyan: hsl(192, 70%, 51%); */
+    --bright-cyan: #2AB6D9;
+
+    /* Color Neutral */
+    --gray-blue: hsl(233, 8%, 62%);
+    --light-grayish: hsl(220, 16%, 96%);
+    --very-light-gray: hsl(0, 0%, 98%);
+    --white: hsl(0, 0%, 100%);
+}
+
 body{
     font-family: 'Public Sans', sans-serif;
+}
+
+.navbar-toggler{
+    color: var(--light-grayish);
+    border: none;
+}
+
+.navbar-toggler:focus{
+    box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width);
+}
+
+.nav-link{
+    color: var(--gray-blue);
+}
+
+.nav-link:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #30D35C;
+    transition: width .3s;
+}
+
+.nav-link:hover::after{
+    width: 100%;
+}
+
+.btn-request{
+    background: linear-gradient(to right, rgba(48,211,91,1) 0%, rgba(42,182,217,1) 100%);
+    color: var(--white);
 }
