@@ -126,13 +126,30 @@ h3{
 /* media queries */
 
 @media (min-width: 1200px) {
-    .bg-hero{
-        background-image: url('../assets/bg-intro-desktop.svg');
-        background-size: contain;
-        background-position: top right;
+    .wrapper-hero{
+        position: relative;
+        height: 480px;
+        overflow: hidden;
+    }
+    .bg-desktop-hero{
         position: absolute;
-        transform: translateY(-30%) translateX(20%);
+        width: 892px;
+        height: 720px;
+        top: -100px;
         right: 0;
-        height: 768px;
+        transform: translateY(-12%) translateX(35%);
+        
+    }
+    .wrapper-content-hero{
+         margin-top: 0;
+    }
+
+    .img-mockup-desktop{
+        position: absolute;
+        width: 580px;
+        height: 680px;
+        right: -8%;
+        top: -8%;
+        z-index: 1;
     }
 }
